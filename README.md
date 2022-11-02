@@ -3,30 +3,31 @@
 Welcome to the Globacap technical test for NodeJS.
 
 Exercise to be completed:
-* Task 1 - Return an ordered list of users
+* Task 1 - Return a filtered list of users
 * Task 2 - Return a user based on the identifier
 * Task 3 - Create a user
 * Task 4 - Implement sign in/out method to authentication the user and persist the session
 * Task 5 - Include an authentication middleware to validate the user session
 
 ## Tasks
-### 1. Return an ordered list of users
+### 1. Return a filtered list of users
 
-On this task will require to sort a list of users based on two query parameters that will be send on the request.
+On this task will require to sort a list of users based on a query parameter that will be send on the request.
 
-The sorting will accept the following query parameters:
-* `sort` - Will defined the attributes to do the sorting (`id`, `name`)
-* `dir` - Will defined the order or sorting (`asc` or `desc`)
+The query parameter will accept:
+* `active` - Will filter users who are active
 
-**Note:** The route/endpoint is already created, so you will only need to generate the code to return the ordered list.
+example url: `<url>/api/users?active=true`
+
+**Note:** The route/endpoint is already created, so you will only need to generate the code to return the filtered list.
 
 ### 2. Return a user based on the identifier
 
 On this task, will have to find a user based on an identifier.
 
 The following user cases will be implemented:
-* Return an user based on the identifier if match with the identifier sent as parameter.
-* Return an Not found error in case the request identifier not match any user.
+* Return a user based on the identifier if match with the identifier sent as parameter.
+* Return a Not found error in case the request identifier not match any user.
 
 **Note:** The route/endpoint is already created, so you will only need to generate the code to return the user if found.
 
